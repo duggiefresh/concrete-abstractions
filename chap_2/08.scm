@@ -17,3 +17,17 @@
       0
       (+ (square n)
          (sum-of-squares (- n 1))))))
+
+(define sum-of-cubes
+  (lambda (n)
+    (if (= n 0)
+      0
+      (+ (cube n)
+         (sum-of-cubes (- n 1))))))
+
+; (define sum-of-powers
+  ; (lambda (num power)
+    ; (cond (= num 0) 0)
+          ; (= power 0) )
+        ; (+ (expt num power)
+           ; (sum-of-powers (- num 1) (power))))
